@@ -1,6 +1,174 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&subset=cyrillic');
+@import "myStrap";
+
+*{
+  box-sizing: border-box;
+}
+
 body{
-  color: red;
-  div{
-    font-family: 33px;
+  font-family: 'Roboto', sans-serif;
+  margin:0;
+  background-color: #00cc99;
+}
+
+header{
+  .top-bar{
+    background-color: #3c4554;
+    color: #999;
+    .contacts{
+      padding: 0px 0;
+      display: flex;
+      p:first-child{
+        margin-right: 20px;
+      }
+    }
+    .social-media{
+      text-align: right;
+      a{
+        color: #999;
+        text-decoration: none;
+        display: inline-block;
+        padding: 0 5px;
+        transition: 0.3s;
+        &:hover{
+          color: white;
+        }
+      }
+    }
+  }
+  .main-bar{
+    background-color: #fff;
+    h1{
+      display: inline-block;
+      margin: 0;
+    }
+    nav{
+      .main-menu{
+        list-style: none;
+        padding-left: 0;
+        font-weight: 700;
+        margin: 0;
+        display: flex;
+        li{
+          position: relative;
+          display: inline-block;
+          transition: 0.2s;
+          a{
+            padding: 0 15px;
+            line-height: 80px;
+            text-transform: uppercase;
+            text-decoration: none;
+          }
+          &:hover{
+            background-color: #ff9619;
+            a{
+              color: #fff;
+            }
+          }
+          ul{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.home-slider{
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.welcome-text{
+  background-color: #16bdfa;
+  color: white;
+  padding: 25px 0;
+  h4{
+    margin: 0;
+    text-align: center;
+  }
+}
+
+.features{
+  background-color: #3c4554;
+  color: #999;
+  padding: 70px 0;
+  .feature-box{
+    padding: 0 10px;
+    i{
+      font-size: 36px;
+      color: #16bdfa;
+      float: left;
+      margin-right: 20px;
+    }
+    h4{
+      color: white;
+      margin:  0 0 5px;
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+    p{
+      margin: 0 0 10px;
+      text-align: justify;
+    }
+    a{
+      transition: 0.2s;
+      font-weight: bold;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #16bdfa;
+      &:hover{
+        color: white;
+      }
+    }
+  }
+}
+
+.recent{
+  .recent-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a{
+      padding: 0 20px;
+      font-size: 18px;
+      color: #333;
+    }
+    h4{
+      padding: 25px 0;
+      font-size: 18px;
+      text-transform: uppercase;
+      margin: 0;
+      span{
+        font-weight: 300;
+      }
+    }
+  }
+  .recent-slider{
+    .col-3{
+      width: 25%;
+    }
+    .recent-item{
+      img{
+        width: 100%;
+        //height: 100%;
+        object-fit: cover;
+        height: 300px;
+      }
+      .info{
+        text-align: center;
+        border: 1px solid #ebeced;
+        border-left: 0;
+        margin-right: -1px;
+        padding: 15px;
+        color: #999;
+      }
+    }
   }
 }

@@ -1,0 +1,26 @@
+.container-fluid{
+  width: 100%;
+}
+
+.container{
+  max-width: 1200px;
+  width: 100%;
+  margin:auto;
+}
+
+.row{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.col-9{
+  width: 75%;
+}
+.col-6{
+  width: 50%;
+}
+.col-3{
+  width: calc(25% - 10px);
+}

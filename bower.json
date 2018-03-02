@@ -1,12 +1,12 @@
 {
-  "name": "frontendbuilder",
+  "name": "ForestTemplate",
   "description": "",
   "main": "index.js",
   "authors": [
     "Oshevchuk <megadevice83@gmail.com>"
   ],
   "license": "ISC",
-  "homepage": "",
+  "homepage": "https://github.com/oshevchuk/ForestTemplate",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -15,7 +15,7 @@
     "tests"
   ],
   "dependencies": {
-    "normalize.css": "*",
-    "jquery": "2.*"
+    "jquery": "^3.3.1",
+    "normalize.css": "^8.0.0"
   }
 }
